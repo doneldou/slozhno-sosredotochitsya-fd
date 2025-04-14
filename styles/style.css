@@ -1,5 +1,133 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  padding: 10px;
+  font-size: 18px;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+}
+
+/* Header */
+
+.header {
+  display: grid;
+  grid-template-columns: 1;
+
+  position: relative;
+
+  background: url("../images/cover-image-dark.png") center/cover no-repeat;
+  margin: -10px;
+  padding: 10px;
+  overflow: visible;
+}
+
+.header::before {
+  content: "";
+  display: block;
+
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+
+  width: 25px;
+  height: 25px;
+
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.header::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
+
+  width: 25px;
+  height: 25px;
+
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.rec__icon {
+  text-transform: uppercase;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  color: var(--accent-color);
+
+  position: absolute;
+  inset-block-start: 12px;
+  inset-inline-end: 19px;
+}
+
+.rec__icon::after {
+  content: "";
+  display: inline-block;
+
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+
+  background-color: #ff0070;
+  box-shadow: 0px 0px 4px 2px #ff0070;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+
+  justify-self: end;
+
+  gap: 10px;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.header__theme-menu-button {
+  border: none;
+  background-color: transparent;
+
+  inline-size: 70px;
+
+  padding: 1px 13px 4.5px 13px;
+  line-height: 18px;
+
+  color: var(--accent-color);
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid #ff0070;
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: var(--fw-bold);
+  line-height: 83%;
+
+  color: var(--brand-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+
+  margin-bottom: 55px;
+}
+
+.header__text {
+  background-color: var(--accent-color);
+
+  max-width: 365px;
+
+  justify-self: end;
+
+  margin-bottom: 66px;
+}
+
+.header__paragraph {
+  font-weight: var(--fw-bold);
+  line-height: 23.4px;
+
+  color: var(--text-on-accent);
 }
