@@ -2,3 +2,16 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* Шрифты */
+  --font-main: "IBM Plex mono", monospace;
+  --fw-regular: normal;
+  --fw-bold: bold;
+
+  /* Цвета текста */
+  --main-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --text-on-accent: #000028;
+  --brand-color: #db00ff;
+}
