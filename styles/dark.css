@@ -11,10 +11,13 @@
   */
   --bg-color: #000028;
   --text-bg-color: #ff0070;
+  --bg-image: url("../images/cover-image-dark.png") center/cover no-repeat;
 
   --decor-elem-color: #ff0070;
 
   --brand-color: #db00ff;
+  --brand-sh-color: #ff0070;
+
   --hover-bt-color: #ff007066;
 
   --main-tx-color: #f1b2ce;

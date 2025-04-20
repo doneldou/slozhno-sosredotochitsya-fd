@@ -51,4 +51,8 @@
     --accent-tx-color: #353430;
     --text-on-accent: #353430;
   }
+
+  .theme-auto .rec__icon {
+    display: none;
+  }
 }
