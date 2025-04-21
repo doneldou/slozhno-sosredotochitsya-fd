@@ -11,7 +11,7 @@
   */
   --bg-color: #000028;
   --text-bg-color: #ff0070;
-  --bg-image: url("../images/cover-image-dark.png") center/cover no-repeat;
+  --bg-image: url("../images/cover-image-dark.png");
 
   --decor-elem-color: #ff0070;
 

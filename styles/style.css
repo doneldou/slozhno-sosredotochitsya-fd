@@ -6,6 +6,12 @@
 .page {
   font-size: 18px;
 
+  background-image: var(--bg-image);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  /* background-attachment: fixed; */
+
   background-color: var(--bg-color);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
@@ -22,13 +28,9 @@
 
   position: relative;
 
-  background: var(--bg-image);
-
-  height: clamp(668px, 100vh, 1024px);
+  min-height: 100vh;
 
   padding-top: 10px;
-
-  overflow: visible;
 }
 
 .decorated-zone::before {
@@ -122,6 +124,7 @@
 
 .header__theme-menu-button:focus {
   border-bottom: 1px solid var(--accent-tx-color);
+  outline: none;
 }
 
 .header__theme-menu-button_active {
@@ -218,6 +221,7 @@
 .main-article__link:focus {
   border: 1px solid var(--main-tx-color);
   padding: 0 3px;
+  outline: none;
 }
 
 .main-gallery {

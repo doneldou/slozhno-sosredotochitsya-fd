@@ -10,7 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-color: #fff1f7;
-  --bg-image: url("../images/cover-image-light.png") center/cover no-repeat;
+  --bg-image: url("../images/cover-image-light.png");
   --text-bg-color: #ff8dcb;
 
   --decor-elem-color: #353430;
@@ -37,7 +37,7 @@
   :root {
     /* Дублируем переменные светлой темы */
     --bg-color: #fff1f7;
-    --bg-image: url("../images/cover-image-light.png") center/cover no-repeat;
+    --bg-image: url("../images/cover-image-light.png");
     --text-bg-color: #ff8dcb;
 
     --decor-elem-color: #353430;
