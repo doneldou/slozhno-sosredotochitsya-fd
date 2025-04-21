@@ -100,7 +100,7 @@
   justify-self: end;
   align-self: center;
 
-  margin-top: 20px;
+  margin-bottom: 1px;
 
   gap: 10px;
 }
@@ -139,6 +139,8 @@
 
   justify-self: start;
   align-self: center;
+
+  margin-bottom: 8px;
 
   color: var(--brand-color);
   text-shadow: 4px 4px 0 var(--brand-sh-color);
@@ -271,7 +273,7 @@
   text-shadow: 2px 2px 0 var(--brand-sh-color);
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
   :root {
     --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -298,10 +300,6 @@
   .rec__icon {
     inset-block-start: 22px;
     inset-inline-end: 29px;
-  }
-
-  .header__theme-menu-list {
-    /* align-self: center; */
   }
 
   .header__title {
@@ -398,7 +396,7 @@
   }
 }
 
-@media (width > 1024px) {
+@media (width >= 1024px) {
   .header {
     min-height: 768px;
   }
