@@ -403,12 +403,9 @@
 
   .header__theme-menu-list {
     justify-self: center;
-    align-self: center;
+    align-self: start;
 
     flex-direction: row;
-
-    margin-top: 0;
-    margin-bottom: 273px;
   }
 
   .header__text {
@@ -425,6 +422,10 @@
   .main-article--desctop .main-article__title {
     grid-column: 1 / 4;
     inline-size: 315px;
+  }
+
+  .main-article--tablet {
+    grid-template-columns: 315px 2fr;
   }
 
   .main-article--desctop .main-article__content {
