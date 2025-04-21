@@ -304,12 +304,12 @@
 
   .header__title {
     margin-left: -20px;
+    margin-bottom: 17px;
     font-size: var(--logo-size);
-
-    /* align-self: center; */
   }
 
   .header__text {
+    margin-bottom: 38px;
   }
 
   .main {
